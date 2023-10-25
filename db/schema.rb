@@ -10,12 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_24_122042) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_24_174305) do
   create_table "books", force: :cascade do |t|
     t.string "title"
     t.string "category"
     t.integer "price", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "rent", default: false
   end
+
 end
